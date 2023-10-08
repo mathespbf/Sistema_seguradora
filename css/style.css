@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+}
+
+body{
+    display: flex;
+}
+
+.areaL{
+    background-color: aquamarine;
+    width: 70%;
+    height: 100vh;
+}
+
+.areaR{
+    background-color: aqua;
+    width: 30%;
+    height: 100vh;
+}
+
+.arealogin{
+    background-color: blue;
+    width: 100%;
+    display: flex;
+}
+
+.cadastro{
+    display: grid;
+    background-color: bisque;
+    margin-top: 60%;
+    justify-items: center;
+}
+
+.cadastronomes{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+}
+
+.cadastroemail-senha{
+    display: grid;
+    justify-content: center;
+}
+
+
+.btn_cadastro{
+    width: 30%;
+}
