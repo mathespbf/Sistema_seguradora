@@ -4,50 +4,107 @@
 }
 
 :root{
-
+    --cor01: #faf2d3;
+    --cor02: #fae869;
+    --cor03: ;
+    --cor04: ;
 }
 
 body{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
+input, input:focus, input:hover{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+
+/*===============lado-esquerdo==================*/
 .areaL{
-    background-color: aquamarine;
-    width: 70%;
+    background-color: var(--cor01);
     height: 100vh;
+    width: 70vw;
 }
 
+/*todo header esta em um css a parte */
+
+.textocentral{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+/*===============lado-direito==================*/
 .areaR{
-    background-color: aqua;
-    width: 30%;
+    background-color: var(--cor02);
     height: 100vh;
+    width: 30vw;
 }
 
 .arealogin{
-    background-color: blue;
+    background-color: var(--cor02);
     width: 100%;
+    height: 70px;
     display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
 }
 
-.cadastro{
-    display: grid;
-    background-color: bisque;
-    margin-top: 60%;
-    justify-items: center;
+.arealogin input{
+    width: 30%;
+    height: 25%;
+    margin-left: 3px;
+    padding: 8px;
+    border-radius: 15px;
 }
 
-.cadastronomes{
-    display: grid;
-    grid-template-columns: 40% 40%;
+.arealogin label{
+    margin-left: 10px;
+}
+
+.btn_login{
+    margin: 5px;
+}
+
+.areacadastro{
+    background-color: var(--cor02);
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-.cadastroemail-senha{
-    display: grid;
-    justify-content: center;
+.areacadastro input{
+    width: calc(80% + 25px);
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 15px;
 }
 
+.cadastronome{
+    width: 100%;
+}
+
+.cadastronome input{
+    width: 40%;
+}
 
 .btn_cadastro{
-    width: 30%;
+    width: calc(80% + 25px);
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    background-color: blue;
 }

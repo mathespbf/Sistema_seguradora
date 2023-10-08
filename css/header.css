@@ -1,0 +1,29 @@
+:root{
+    --cor01: #faf2d3;
+    --cor02: #fae869;
+    --cor03: ;
+    --cor04: ;
+}
+.topo{
+    background-color: var(--cor01);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.topo img{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 70px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin: 20px;
+}
